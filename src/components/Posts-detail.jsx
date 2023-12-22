@@ -1,4 +1,4 @@
-export const postsDetail = [
+const postsDetail = [
   {
     id: 1,
     title: "Paper Clips",
