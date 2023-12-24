@@ -1,14 +1,14 @@
 import { useState } from "react";
 import postsDetail from "./Posts-detail.jsx";
 function Posts() {
-  const [post, setPost] = useState(postsDetail); // state ของ post-item
-  // ฟังก์ชันปุ่ม Like
+  const [post, setPost] = useState(postsDetail);
+
   const addLike = (i) => {
     const newPost = [...post];
     newPost[i].likes += 1;
     setPost(newPost);
   };
-  // ฟังก์ชั่นปุ่ม Dislike
+
   const subtractLike = (i) => {
     const newPost = [...post];
     if (newPost[i].likes > 0) {
